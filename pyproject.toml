@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "pre_commit_gradle"
+version = "0.3.0"
+description = "Some custom gradle hooks for pre-commit."
+long_description = "file: README.md"
+url = "https://github.com/northisup/pre-commit-gradle"
+license = "MIT"
+packages = [{ include = "pre_commit_hooks" }]
+authors = ["adam"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+whichcraft = "^0.6.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gradle-check = "pre_commit_hooks.main:gradle_check_main"
+gradle-build = "pre_commit_hooks.main:gradle_build_main"
+gradle-spotless = "pre_commit_hooks.main:gradle_spotless_main"
+gradle-task = "pre_commit_hooks.main:gradle_task_main"
+
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
