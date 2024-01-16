@@ -1,3 +1,9 @@
+0.3.1 - 2024-01-16
+==================
+- Refactor everything to eliminate code duplication
+- Switch to poetry
+- Add detekt support
+
 0.3.0 - 2021-01-08
 ==================
 - Update - `gradle-spotless` now executes `spotlessCheck` and `spotlessApply` rather than `spotlessJavaCheck` and `spotlessJavaApply`. Now supports projects using Java Kotlin, Scala, etc.

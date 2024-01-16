@@ -22,3 +22,9 @@
   entry: gradle-task
   language: python
   pass_filenames: false
+- id: gradle-detekt
+  name: gradle detekt
+  description: Lints the project using "gradle detekt"
+  entry: gradle-detekt
+  language: python
+  pass_filenames: false

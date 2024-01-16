@@ -44,3 +44,7 @@ def gradle_check_main() -> int:
 
 def gradle_build_main() -> int:
     return gradle_task_main("build")
+
+
+def gradle_detekt_main() -> int:
+    return gradle_task_main("detekt")
