@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pre_commit_gradle"
-version = "0.3.1"
+version = "0.3.2"
 description = "Some custom gradle hooks for pre-commit."
 long_description = "file: README.md"
 url = "https://github.com/northisup/pre-commit-gradle"
@@ -28,6 +28,12 @@ gradle-build = "pre_commit_hooks.main:gradle_build_main"
 gradle-spotless = "pre_commit_hooks.main:gradle_spotless_main"
 gradle-task = "pre_commit_hooks.main:gradle_task_main"
 gradle-detekt = "pre_commit_hooks.main:gradle_detekt_main"
+gradlew-check = "pre_commit_hooks.main:gradlew_check_main"
+gradlew-build = "pre_commit_hooks.main:gradlew_build_main"
+gradlew-spotless = "pre_commit_hooks.main:gradlew_spotless_main"
+gradlew-task = "pre_commit_hooks.main:gradlew_task_main"
+gradlew-detekt = "pre_commit_hooks.main:gradlew_detekt_main"
+
 
 [tool.mypy]
 check_untyped_defs = true

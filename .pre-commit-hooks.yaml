@@ -1,13 +1,20 @@
+# non-wrapped
+- id: gradle-build
+  name: gradle build
+  description: Builds java project using "gradle build"
+  entry: gradle-build
+  language: python
+  pass_filenames: false
 - id: gradle-check
   name: gradle check
   description: Runs java unit tests using gradle check
   entry: gradle-check
   language: python
   pass_filenames: false
-- id: gradle-build
-  name: gradle build
-  description: Builds java project using "gradle build"
-  entry: gradle-build
+- id: gradle-detekt
+  name: gradle detekt
+  description: Lints the project using "gradle detekt"
+  entry: gradle-detekt
   language: python
   pass_filenames: false
 - id: gradle-spotless
@@ -22,9 +29,35 @@
   entry: gradle-task
   language: python
   pass_filenames: false
-- id: gradle-detekt
-  name: gradle detekt
-  description: Lints the project using "gradle detekt"
-  entry: gradle-detekt
+
+# wrapped
+- id: gradlew-build
+  name: gradlew build
+  description: Builds java project using "gradlew build"
+  entry: gradlew-build
+  language: python
+  pass_filenames: false
+- id: gradlew-check
+  name: gradlew check
+  description: Runs java unit tests using gradlew check
+  entry: gradlew-check
+  language: python
+  pass_filenames: false
+- id: gradlew-detekt
+  name: gradlew detekt
+  description: Lints the project using "gradlew detekt"
+  entry: gradlew-detekt
+  language: python
+  pass_filenames: false
+- id: gradlew-spotless
+  name: gradlew spotless
+  description: Lints the project using "gradlew spotlessCheck spotlessApply"
+  entry: gradlew-spotless
+  language: python
+  pass_filenames: false
+- id: gradlew-task
+  name: gradlew task
+  description: Runs arbitrary gradle tasks for java project
+  entry: gradlew-task
   language: python
   pass_filenames: false
