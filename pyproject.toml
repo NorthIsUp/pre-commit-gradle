@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pre_commit_gradle"
-version = "0.3.0"
+version = "0.3.1"
 description = "Some custom gradle hooks for pre-commit."
 long_description = "file: README.md"
 url = "https://github.com/northisup/pre-commit-gradle"
